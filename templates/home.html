@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Careers</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      #banner {
+        width: 100%;
+        height: 360px;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center mt-2 mb-4">Careers</h1>
+      <img
+        class=".img-fluid"
+        id="banner"
+        src="../static/banner.jpg"
+        alt=""
+        height="320px"
+        width="100%"
+      />
+      <h2 class="text-center mt-2 mb-4">About Us</h2>
+      <p class="lead">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam qui
+        aut, recusandae aperiam dolores beatae eligendi ea. Ab officia repellat
+        sunt. Totam harum accusantium perferendis, ex iste omnis officia quas
+        eveniet corrupti quibusdam obcaecati dicta sunt reiciendis tempora alias
+        voluptate? Non veniam perferendis minus quia sapiente. Nihil dicta,
+        repellat iure quod dolorum quos, unde exercitationem molestiae
+        perferendis, sequi pariatur. Modi, eligendi, illum cupiditate obcaecati
+        magni assumenda provident, laboriosam unde omnis accusantium quidem enim
+        voluptas atque nemo corporis velit est! Harum nam, esse eligendi nihil
+        quaerat saepe, delectus ducimus ex earum impedit voluptates temporibus
+        libero? Accusamus quod quas suscipit praesentium reprehenderit inventore
+        nobis dolores culpa sequi laborum saepe distinctio nulla ea voluptatum,
+        dolor aut dolorum vero nisi et dicta? Praesentium quasi aperiam
+        consectetur cumque veniam, accusantium sint non, nulla dolor maxime
+        rerum, laudantium explicabo expedita corrupti? Pariatur dolor officia
+        necessitatibus natus voluptatibus. Rem commodi unde aspernatur sapiente
+        voluptatem dicta ut vitae similique perspiciatis labore nihil eius
+        repellat modi corrupti rerum distinctio, aut corporis ea qui
+        consequuntur hic. Sunt dignissimos fugit obcaecati tenetur impedit iure
+        dolorum voluptate animi dicta distinctio, dolore sequi repellendus quam
+        possimus perferendis, eum neque beatae voluptatem illo! Soluta et nobis,
+        dignissimos cum eaque autem nesciunt recusandae fugit sit.
+      </p>
+      <h2 class="text-center mt-2 mb-4">Open Positions</h2>
+      <div>
+        {% for job in jobs %}
+          {% include "jobitem.html" %}
+        {% endfor %}
+      </div>
+      <div class="text-center">
+        <button class="btn btn-primary btn-lg">Contact Us</button>
+        <p class="mt-4">Copyright 2023</p>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js"
+      integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
